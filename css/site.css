@@ -173,12 +173,6 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-@media (max-width: 768px) {
-  .card-box {
-    margin-bottom: 20px;
-  }
-}
-
 .services-box i {
   color: #213555;
 }
@@ -307,9 +301,62 @@ body {
 }
 
 /* =====================================
-   Responsive Footer
+   Responsive
   ===================================== */
 @media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-box {
+    padding: 12px;
+    margin-bottom: 16px; 
+  }
+
+  .card-box i {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .card-box h5 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .card-box p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .special-heading {
+    font-size: 2rem;
+    padding: 12px;
+    text-align: center;
+  }
+
   .footer-content {
     flex-direction: column;
     gap: 25px;

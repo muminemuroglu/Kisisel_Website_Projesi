@@ -1,0 +1,321 @@
+/* =====================================
+   Temel Ayarlar
+   ===================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================
+   Navbar & Logo
+  ===================================== */
+.logo {
+  width: 90px;
+  height: 90px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  border: 2px solid #f5efe7;
+  padding: 4px;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.custom-navbar {
+  background-color: rgba(33, 53, 85, 0.8);
+}
+
+.brand-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #f5efe7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  display: inline-block;
+  color: #f5efe7;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 8px 14px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #f8f2ec;
+  color: #3e5879;
+}
+
+.nav-login {
+  background-color: #f8f2ec;
+  color: #3e5879;
+  border-radius: 6px;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 12px;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+  color: #dda853;
+}
+
+/* =====================================
+   Scroll Konum Ayarı (Anchor Link'ler için)
+   ===================================== */
+#services,
+#blog,
+#contact {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  #services,
+  #blog,
+  #contact {
+    scroll-margin-top: 70px;
+  }
+}
+
+/* =====================================
+   Responsive Navbar Ayarları
+   ===================================== */
+@media (max-width: 820px) {
+  .navbar-brand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-brand .logo {
+    width: 60px !important;
+    height: 60px !important;
+    margin-bottom: 5px;
+  }
+
+  .brand-text {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+  .custom-toggler-icon {
+    font-size: 24px;
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap;
+  }
+}
+
+.custom-toggler {
+  background-color: transparent;
+  padding: 6px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #213555;
+  border-radius: 4px;
+}
+
+.custom-toggler:hover,
+.custom-toggler:focus {
+  border: 1px solid #f5efe7;
+  box-shadow: none;
+  outline: none;
+}
+
+.custom-toggler-icon {
+  color: #f5efe7;
+}
+
+/* =====================================
+   Giriş Resmi
+   ===================================== */
+.office-img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.9);
+}
+
+/* =====================================
+   Hizmetler (Services)
+   ===================================== */
+.special-heading {
+  font-size: 3.5rem;
+  color: #213555;
+  padding: 20px;
+}
+
+.bold-part {
+  font-weight: 700;
+}
+
+.light-part {
+  font-weight: 300;
+}
+
+.card-box {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .card-box {
+    margin-bottom: 20px;
+  }
+}
+
+.services-box i {
+  color: #213555;
+}
+
+.h5-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.h5-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* =====================================
+   Blog Kartları
+   ===================================== */
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.container-blog .btn {
+  background-color: #213555;
+  opacity: 0.8;
+  color: #eee;
+}
+
+/* =====================================
+   Footer
+   ===================================== */
+.footer {
+  background-color: #213555;
+  opacity: 0.8;
+  color: #eee;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.logo-footer {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-section h5 {
+  color: #eee;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links li a {
+  color: #eee;
+  transition: color 0.3s;
+}
+
+.social-links li a:hover {
+  color: #f9a825;
+}
+
+.contact-form-section .footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.contact-form-section textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.contact-form-section button {
+  background-color: #f9a825;
+  color: #222;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-form-section button:hover {
+  background-color: #c7a800;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #bbb;
+}
+
+/* =====================================
+   Responsive Footer
+  ===================================== */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
+}

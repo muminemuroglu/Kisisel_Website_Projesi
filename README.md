@@ -33,7 +33,7 @@ Bu proje, modern, responsive (mobil uyumlu) bir **muhasebe ve mali müşavirlik 
 
 ## 📷 Ekran Görüntüsü
 ### Anasayfa Görünümü
-![Anasayfa](screenshot/screenshot-1.png)
+![Anasayfa](screenshot/screenshot.png)
 ### Responsive Menü (Mobil)
 <img src="screenshot/screenshot-2.png" alt="Responsive Menü" width="400" />
 
